@@ -1,0 +1,43 @@
+{
+  "name": "simple-vertex-fragment-shader-canvas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://hellopath@github.com/hellopath/simple-vertex-fragment-shader-canvas.git"
+  },
+  "scripts": {
+    "start": "budo index.js:bundle.js --live -t babelify -t glslify"
+  },
+  "keywords": [
+    "simple",
+    "glsl",
+    "fragment",
+    "vertex",
+    "shader"
+  ],
+  "browserify": {
+    "transform": [
+      "glslify"
+    ]
+  },
+  "author": "hellopath <contact@pa-th.com> (http://pa-th.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hellopath/simple-vertex-fragment-shader-canvas/issues"
+  },
+  "homepage": "https://github.com/hellopath/simple-vertex-fragment-shader-canvas#readme",
+  "dependencies": {
+    "a-big-triangle": "^1.0.2",
+    "babelify": "^7.2.0",
+    "budo": "^8.0.2",
+    "canvas-loop": "^1.0.7",
+    "get-canvas-context": "^1.0.1",
+    "gl-shader": "^4.2.0",
+    "gl-texture2d": "^2.0.10",
+    "glslify": "^5.0.2",
+    "img": "^1.0.0",
+    "map-limit": "0.0.1"
+  }
+}
